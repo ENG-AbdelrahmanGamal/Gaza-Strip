@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+    <data>
+
+
+    </data>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomeFragment">
+
+<!--    <androidx.slidingpanelayout.widget.SlidingPaneLayout-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        android:id="@+id/slider"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="150dp"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        app:sliderAnimationDuration="600"-->
+<!--        app:sliderAutoCycleDirection="back_and_forth"-->
+<!--        app:sliderIndicatorEnabled="true"-->
+<!--        app:sliderIndicatorGravity="center_horizontal|bottom"-->
+<!--        app:sliderIndicatorMargin="15dp"-->
+<!--        app:sliderIndicatorOrientation="horizontal"-->
+<!--        app:sliderScrollTimeInSec="1" />-->
+    <LinearLayout
+        android:id="@+id/slider"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<!--        <com.denzcoskun.imageslider.ImageSlider-->
+<!--            android:id="@+id/image_slider"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            />-->
+    </LinearLayout>
+
+    <com.google.android.material.chip.ChipGroup
+    android:id="@+id/chipGroup_home"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/slider"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:text="@string/news"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.chip.Chip
+        android:layout_width="wrap_content"
+        android:text="@string/Economics"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.chip.Chip
+    android:layout_width="wrap_content"
+    android:text="@string/commerce"
+    android:layout_height="wrap_content"/>
+    <com.google.android.material.chip.Chip
+    android:layout_width="wrap_content"
+    android:text="@string/Sciences"
+    android:layout_height="wrap_content"/>
+    <com.google.android.material.chip.Chip
+    android:layout_width="wrap_content"
+    android:text="@string/AlAqsaMosque"
+    android:layout_height="wrap_content"/>
+</com.google.android.material.chip.ChipGroup>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/category_rv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+       app:layout_constraintTop_toBottomOf="@+id/chipGroup_home"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:listitem="@layout/news_items"
+        tools:itemCount="5"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item
+android:id="@+id/homeFragment"
+    android:title="@string/name"
+    android:icon="@drawable/home"
+    />
+    <item
+        android:id="@+id/aboutFragment"
+        android:title="@string/about"
+        android:icon="@drawable/about"
+        />
+    <item
+        android:id="@+id/placeholder"
+        android:title="" />
+    <item
+        android:id="@+id/bt_men_hero"
+        android:title="@string/hero"
+        android:icon="@drawable/hero"
+        />
+    <item
+        android:id="@+id/liveFragment"
+        android:title="@string/live"
+        android:icon="@drawable/live"
+        />
+</menu>

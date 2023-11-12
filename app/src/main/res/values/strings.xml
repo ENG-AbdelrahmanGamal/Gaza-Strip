@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Gaza Strip</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">name</string>
+    <string name="live">Live\n</string>
+    <string name="hero">Hero\n</string>
+    <string name="about">"About "</string>
+    <string name="home">"Home "</string>
+    <string name="news">news</string>
+    <string name="sporting">sporting</string>
+    <string name="commerce">Commerce</string>
+    <string name="AlAqsaMosque">Al Aqsa  Mosque</string>
+    <string name="Sciences">Sciences</string>
+    <string name="Economics">Economics</string>
+</resources>
